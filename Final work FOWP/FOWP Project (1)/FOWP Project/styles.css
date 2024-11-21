@@ -1,0 +1,288 @@
+.title {
+    color: green;
+}
+
+*{
+ margin: 0;
+ padding: 0 ;
+ font-family: Lucida Sans;
+ box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Lucida Sans;
+ background-color: whitesmoke;
+ 
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navigation Styling */
+.navigation{
+   
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1.5rem .8rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+}
+ 
+                
+            
+.left-corner, right-corner{
+  display: flex;
+  align-items: center;
+
+}
+
+            
+.menu{
+    position:relative;
+    width: 100%;
+    height: 40%;
+    background-color: whitesmoke; 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.menu li{
+   margin-right: 1rem; 
+}
+.menu li a {
+    color: black;
+    margin: 1.2rem;
+    /*rem: a unit of measurement that represents the font size of the root element,
+    1rem = font size of html element*/
+    font-size:1.5rem; 
+    transition: all ease 0.3s;
+}
+.menu li a:hover{
+    color: red;
+   
+}
+
+.logo{
+    color:darkblue;
+    text-transform: uppercase;
+    font-size: 2rem;
+    vertical-align: top;
+    padding-left: 20px;
+    display: inline-block;
+    font-family: monoton;
+    letter-spacing: 1px;
+    margin-right: 3rem;
+}
+.Search-box{
+    background-color: white;
+    padding: 2px 20px;
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px; 
+    
+}
+ .Search-box input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+}
+/* Section Styling */
+section{
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    
+}
+section img{
+   border-radius: 20px;  
+   
+}
+section img:hover{
+    transform: scale(1.1);
+    transition: all ease 0.3s;
+}
+
+
+/* both log and reg Page Styles */
+h2 {
+    text-align: center;
+    color: #878787;
+    margin-bottom: 40px;
+}
+
+
+.switch-text {
+    margin-top: 15px;
+    color: #878787;
+}
+
+.switch-text a {
+    color: #5c5cb8;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555555;
+} 
+
+/* Login Page Styles */
+.login-container {
+  width: 300px;
+  margin: 50px auto;
+  margin-top: 130px;
+}
+
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c5cb8;
+    color: white;
+    border: none;
+    border-radius: 4px;}
+
+.login-container button:hover {
+    background-color: #362094;
+}
+
+
+/* reg Page Styles ?? */
+
+.container-reg {
+    width: 300px;
+    margin: 50px auto;
+    margin-top: 100px;
+}
+
+.container-reg input[type="text"],
+.container-reg input[type="email"],
+.container-reg input[type="password"] {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+}
+
+.container-reg button {
+   width: 100%;
+    padding: 10px;
+    background-color: #5c5cb8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+   
+}
+
+.container-reg button:hover {
+    background-color: #362094;
+}
+/* Container Styling */
+.container {
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #5c5cb8;
+}
+
+/* Seat Styling */
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+.seat:hover {
+    background-color: #cce4ff;
+}
+
+.seat.selected {
+    background-color: #5c5cb8;
+    color: #fff;
+}
+
+/* Seat Layout Styling */
+.seat-selection {
+    text-align: center;
+}
+
+.theater-layout {
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.seats {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.book-now-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  background-color: #5c5cb8;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.book-now-btn:hover {
+  background-color: #362094;
+}

@@ -1,0 +1,86 @@
+     <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Movie Ticket Booking Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--import monoton font-->
+        <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+   
+    </head>
+   
+    <body>
+    
+    
+        
+    <nav class="navigation" id="nav">
+        
+
+       <div class="left-corner">
+        <!--Logo-->
+        <a href="Home%20Page.html" class="logo">
+            moovie</a>
+           
+         <!--menu-->
+        <ul class="menu">
+        <li><a target="_self" href="Home%20Page.html">Home</a></li>
+        <li><a target="_self" href="All%20Movies.html">All Movies</a></li>
+        <li><a target="_self" href="Contact.html">Contact</a></li>
+        <li><a target="_self" href="Login.html">Login</a></li>
+        <li><a target="_self" href="Register.html">Register</a></li>
+        </ul>
+           
+        </div>
+        
+        <div class="right-corner">
+        <!--Search bar-->
+        <form class="Search-box">
+        <input type="text" id="search" name="search" placeholder="Search Movie"
+               class="Search-input" required/>
+        <button onclick="Images()" type="button">Go</button>
+       
+        </form>
+        </div>
+    
+       
+        
+    </nav> 
+        
+
+    <section>
+        
+        <a class="Movies" href="M1details.html"><img src="F1.jpg" height="300px" width="200px" alt="Blade Runner 2049"></a>
+        <a class="Movies" href="M2details.html"><img src="F2.jpg" height="300px" width="200px" alt="Brad's Status"></a>
+        <a class="Movies" href="M3details.html"><img src="F3.jpg" height="300px" width="200px" alt="The Star"></a>
+        <a class="Movies" href="M4details.html"><img src="F4.jpg" height="300px" width="200px" alt="Thor Ragnarok"></a>
+        <a class="Movies" href="M5details.html"><img src="F5.jpg" height="300px" width="200px" alt="Kingsman"></a>
+        <a class="Movies" href="M6details.html"><img src="F6.jpg" height="300px" width="200px" alt="Geostorm"></a>
+        <a class="Movies" href="M7details.html"><img src="F7.jpg" height="300px" width="200px" alt="Bad Boys"></a>
+        <a class="Movies" href="M8details.html"><img src="F8.jpg" height="300px" width="200px" alt="Star Wars"></a>
+        <a class="Movies" href="M9details.html"><img src="F9.jpg" height="300px" width="200px" alt="Mouana 2"></a>
+        <a class="Movies" href="M10details.html"><img src="F10.jpg" height="300px" width="200px" alt="Venom"></a>
+        <a class="Movies" href="M11details.html"><img src="F11.jpg" height="300px" width="200px" alt="Heretic"></a>
+        <a class="Movies" href="M12details.html"><img src="F12.jpg" height="300px" width="200px" alt="Spellbound"></a>
+
+        
+    </section>
+        
+   <script>
+      function Images() {
+      let filtering = $("#search").val().toLowerCase();
+      $(".Movies").hide();
+      $('.Movies').each(function() {
+      if ($(this).text().toLowerCase().indexOf(filtering) !== -1 || $("img", this).attr("alt").toLowerCase().indexOf(filtering) !== -1) {
+      $(this).show();
+    }
+  });
+};
+
+        </script>
+   
+        
+    
+    </body>
+</html>

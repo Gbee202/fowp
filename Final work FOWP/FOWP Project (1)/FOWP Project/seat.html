@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking - Seat Selection</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Lucida Sans;
+    background-color: whitesmoke;
+    display: flex; /* Ensures body-centered content if needed */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+        
+    .navigation {
+    justify-content: center;
+    align-items: center;
+    padding: 30px 50px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
+}
+    
+    button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5c5cb8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #362094;
+}
+         .screen-label{
+            color:#5c5cb8;
+            margin-bottom: 20px;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Select Your Seats</h1>
+        </header>
+
+        <section class="seat-selection">
+             <p class="screen-label">Screen</p>
+            <div class="theater-layout">
+               
+                <div class="seats">
+                    <!-- Row A (Fewer seats) -->
+                    <div class="seat-row" data-row="A">
+                        <div class="seat" data-seat="A1">A1</div>
+                        <div class="seat" data-seat="A2">A2</div>
+                        <div class="seat" data-seat="A3">A3</div>
+                    </div>
+                    <!-- Row B -->
+                    <div class="seat-row" data-row="B">
+                        <div class="seat" data-seat="B1">B1</div>
+                        <div class="seat" data-seat="B2">B2</div>
+                        <div class="seat" data-seat="B3">B3</div>
+                        <div class="seat" data-seat="B4">B4</div>
+                    </div>
+                    <!-- Row C -->
+                    <div class="seat-row" data-row="C">
+                        <div class="seat" data-seat="C1">C1</div>
+                        <div class="seat" data-seat="C2">C2</div>
+                        <div class="seat" data-seat="C3">C3</div>
+                        <div class="seat" data-seat="C4">C4</div>
+                        <div class="seat" data-seat="C5">C5</div>
+                    </div>
+                    <!-- Row D -->
+                    <div class="seat-row" data-row="D">
+                        <div class="seat" data-seat="D1">D1</div>
+                        <div class="seat" data-seat="D2">D2</div>
+                        <div class="seat" data-seat="D3">D3</div>
+                        <div class="seat" data-seat="D4">D4</div>
+                        <div class="seat" data-seat="D5">D5</div>
+                        <div class="seat" data-seat="D6">D6</div>
+                    </div>
+                    <!-- Row E (More seats) -->
+                    <div class="seat-row" data-row="E">
+                        <div class="seat" data-seat="E1">E1</div>
+                        <div class="seat" data-seat="E2">E2</div>
+                        <div class="seat" data-seat="E3">E3</div>
+                        <div class="seat" data-seat="E4">E4</div>
+                        <div class="seat" data-seat="E5">E5</div>
+                        <div class="seat" data-seat="E6">E6</div>
+                        <div class="seat" data-seat="E7">E7</div>
+                    </div>
+                </div>
+            </div>
+            <form action="price.html" method="get">
+                <button type="submit">Confirm and View Price</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

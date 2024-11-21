@@ -1,0 +1,169 @@
+      <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Movie Ticket Booking Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+        
+        <!--import monoton font-->
+        <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet'>
+         <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <style>
+        
+        .cart,.profile{
+         position: relative;
+         margin-right: 1rem;
+         margin-top: 4px;
+         }
+        .profile{
+         height: 36px;
+         width: 36px;
+         margin-bottom: 3px;
+         }
+        .cart{
+         height: 45px;
+         width: 45px;
+    
+         }   
+       
+        .upcoming-Mov{
+            position:relative;
+            height: 390px;
+            width: 1070px%;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin-bottom: 50px;
+           
+        }
+        .upcoming-title{
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            font-family: Lato;
+            color:burlywood;
+            background-color: black;
+            padding: .5rem 1rem;
+            border-radius: 2rem;
+            border: 1px solid burlywood;
+            font-weight: 500;
+        }
+        
+        .cu-img-box{
+            position:relative;
+            height: 300px;
+            width: auto;
+            margin-bottom: 1rem;
+            border-radius: .5rem;
+            overflow: hidden;
+        }
+        .current-movs{
+            display:flex;
+            gap: 2.2rem;
+            width: 1200px;
+           
+        }
+        .movie-containers{
+            font-family: Lato;
+            position: relative;
+            margin-left: 100px;
+            margin-top: 20px;
+            
+        }
+        .curr-title{
+            width: 250px;
+            font-family: Lato;
+            color:black;
+           
+           
+            
+            margin-bottom: 40px;
+           
+            font-size: 1.5rem;
+             font-family: Lucida Sans;
+        }
+        
+    
+    </style> 
+    </head>
+    <body>
+    
+    
+        
+    <nav class="navigation" id="nav">
+        <div class="left-corner">
+       
+        <!--Logo-->
+        <a href="Home%20Page.html" class="logo">
+            moovie</a>
+    
+        <!--menu-->
+        <ul class="menu">
+        <li><a href="Home%20Page.html">Home</a></li>
+        <li><a href="All%20Movies.html">All Movies</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Login.html">Login</a></li>
+        <li><a href="Register.html">Register</a></li>
+        </ul>
+            
+        </div>
+        <!--right corner icons-->
+        <div class="right-corner">
+        <img src="shopping-bag.png" alt="cart" class="cart">
+        <img src="profile.png" alt="profile" class="profile">
+    
+        
+        </div>
+        
+    </nav> 
+    <section class="movie-containers">
+     <div class="upcoming-Mov">
+     <a href="MoUpcomingDetails.html"><img  width="1060px" height="390" src="upcoming.jpg" alt="upcoming movie"></a>
+     <p class="upcoming-title">Upcoming Movie</p>
+     </div>
+    <div><p class="curr-title">Current Movies</p></div>
+    <div class="current-movs">
+    
+    <div class="current-mov">
+        <div class="cu-img-box">
+        <a href="M11details.html"><img width="184" height="270" src="F11.jpg"></a>
+        </div>
+        
+        </div>
+        
+    <div class="current-mov">
+        <div class="cu-img-box">
+        <a href="M3details.html"><img  width="184" height="270" src="F3.jpg"></a>
+        </div>
+       
+        </div>
+    
+    <div class="current-mov">
+        <div class="cu-img-box">
+        <a href="M4details.html"><img width="184" height="270" src="F4.jpg"></a>
+        </div>
+        
+        </div>
+    
+    <div class="current-mov">
+        <div class="cu-img-box">
+        <a href="M5details.html"><img width="184" height="270" src="F5.jpg"></a>
+        </div>
+        </div>
+    
+     <div class="current-mov">
+        <div class="cu-img-box">
+        <a href="M6details.html"><img width="184" height="270" src="F6.jpg"></a>
+        </div>
+        </div>
+    </div>
+         
+           
+        
+    </section>
+    
+   
+        
+    
+    </body>
+</html>
